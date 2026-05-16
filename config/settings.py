@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
      "apps.identity",
      "apps.device_control",
+     "apps.rules",
 ]
 
 
