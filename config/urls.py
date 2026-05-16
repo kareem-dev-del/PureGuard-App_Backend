@@ -19,4 +19,9 @@ urlpatterns = [
     include("apps.device_control.urls")
    ),
 
+   path(
+    "api/v1/rules/",
+    include("apps.rules.urls")
+   ),
+
 ]
