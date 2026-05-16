@@ -24,4 +24,24 @@ urlpatterns = [
     include("apps.rules.urls")
    ),
 
+   path(
+    "api/v1/events/",
+    include("apps.analytics.urls")
+   ),
+
+   path(
+    "api/v1/children/",
+    include("apps.parental.urls")
+    ),
+
+    path(
+    "api/v1/reports/",
+    include("apps.reports.urls")
+   ),
+
+   path(
+    "api/v1/recovery/",
+    include("apps.recovery.urls")
+    ),
+
 ]

@@ -5,17 +5,18 @@ from .views import (
     MyDevicesView,
 )
 
-
 urlpatterns = [
 
     path(
         "register/",
-        DeviceRegisterView.as_view()
+        DeviceRegisterView.as_view(),
+        name="device-register"
     ),
 
     path(
         "me/",
-        MyDevicesView.as_view()
+        MyDevicesView.as_view(),
+        name="my-devices"
     ),
 
 ]

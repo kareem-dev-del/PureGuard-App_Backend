@@ -40,6 +40,10 @@ INSTALLED_APPS = [
      "apps.identity",
      "apps.device_control",
      "apps.rules",
+     "apps.analytics",
+     "apps.parental",
+     "apps.reports",
+     "apps.recovery",
 ]
 
 
