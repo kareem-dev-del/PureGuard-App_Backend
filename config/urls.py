@@ -44,4 +44,9 @@ urlpatterns = [
     include("apps.recovery.urls")
     ),
 
+    path(
+    "api/v1/subscriptions/",
+    include("apps.subscriptions.urls")
+    ),
+
 ]
