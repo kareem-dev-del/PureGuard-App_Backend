@@ -45,6 +45,7 @@ INSTALLED_APPS = [
      "apps.reports",
      "apps.recovery",
      "apps.subscriptions",
+     "apps.pairing",
 ]
 
 

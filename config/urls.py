@@ -49,4 +49,9 @@ urlpatterns = [
     include("apps.subscriptions.urls")
     ),
 
+    path(
+    "api/v1/pair/",
+    include("apps.pairing.urls")
+  ),
+
 ]
