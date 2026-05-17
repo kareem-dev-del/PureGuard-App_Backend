@@ -44,6 +44,7 @@ INSTALLED_APPS = [
      "apps.parental",
      "apps.reports",
      "apps.recovery",
+     "apps.subscriptions",
 ]
 
 
