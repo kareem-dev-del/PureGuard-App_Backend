@@ -1,10 +1,10 @@
-from rest_framework.permissions import (
-    IsAuthenticated
-)
-
 from rest_framework.generics import (
     CreateAPIView,
     ListAPIView,
+)
+
+from core.permissions.roles import (
+    IsParentUser
 )
 
 from .models import (
@@ -25,7 +25,7 @@ class ChildCreateView(
     )
 
     permission_classes = (
-        IsAuthenticated,
+        IsParentUser,
     )
 
 
@@ -48,7 +48,7 @@ class MyChildrenView(
     )
 
     permission_classes = (
-        IsAuthenticated,
+        IsParentUser,
     )
 
 

@@ -1,8 +1,11 @@
 from django.utils import timezone
 
 from rest_framework.views import APIView
-from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
+
+from core.permissions.roles import (
+    IsRecoveryUser
+)
 
 from .models import (
     RecoveryProfile
@@ -18,7 +21,7 @@ class RecoveryStartView(
 ):
 
     permission_classes = (
-        IsAuthenticated,
+        IsRecoveryUser,
     )
 
 
@@ -46,7 +49,7 @@ class RecoveryMeView(
 ):
 
     permission_classes = (
-        IsAuthenticated,
+        IsRecoveryUser,
     )
 
 
@@ -72,7 +75,7 @@ class RelapseView(
 ):
 
     permission_classes = (
-        IsAuthenticated,
+        IsRecoveryUser,
     )
 
 
