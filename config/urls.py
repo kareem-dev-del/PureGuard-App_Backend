@@ -54,4 +54,11 @@ urlpatterns = [
     include("apps.pairing.urls")
   ),
 
+  path(
+    "api/v1/commands/",
+    include("apps.realtime.urls")
+  ),
+
+ 
+
 ]
